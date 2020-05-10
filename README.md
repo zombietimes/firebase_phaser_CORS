@@ -3,9 +3,9 @@ The solution to Cross-Origin Resource Sharing (CORS).
 
 ## Overview
 The following error occurred.  
-'''
+```
 Access to image at 'https://firebasestorage.googleapis.com/v0/b/...' from origin 'https://prototypesampledevelopment.web.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
-'''
+```
 - I developed a firebase application for the web by using Phaser.  
 - There are some image files on the firebase storage.  
 - When a phaser draws the image files, the error has occurred.  
@@ -17,8 +17,8 @@ Phaser can't draw the image files on the firebase storage.
 ![firebase_phaser_CORS_0000](https://user-images.githubusercontent.com/50263232/81491417-6774a180-92c9-11ea-87fa-78fe78ba0f97.png)  
   
 ### Reason
-The domain of the image files is https://firebasestorage.googleapis.com/.  
-The domain of the application is https://prototypesampledevelopment.web.app.  
+The domain of the image files is firebasestorage.googleapis.com.  
+The domain of the application is prototypesampledevelopment.web.app.  
 The CORS policy prohibits access between different domains.  
 - [CORS : Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
   
