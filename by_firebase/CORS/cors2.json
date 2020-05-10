@@ -1,0 +1,6 @@
+[{
+  "origin": ["gs://prototypesampledevelopment.appspot.com","http://127.0.0.1:8887/"],
+  "responseHeader": ["*"],
+  "method": ["GET"],
+  "maxAgeSeconds": 86400
+}]
